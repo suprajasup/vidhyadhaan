@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  
+  <body>
+    
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <h2>Vidyadhaan</h2>
+        </a>
+    </nav>
+
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+            <div class="form-group col-xs-4">
+                <label for="Ano"> Application Number</label>
+                <input type="text" class="form-control" name="Ano" placeholder="Application number">
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-xs-4">
+                <label for="Sname">Student's name</label>
+                <input type="text" class="form-control " name="Sname" placeholder="Student's name">
+              </div>
+
+              <div class="form-group col-xs-4">
+                <label for="Sphoto"> Upload student's photo</label> <br>    
+                <input type="file" name="mycover1" value="SUpload" name="Sphoto">
+              </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group col-xs-4">
+                  <label for="Fname">Father's name</label>
+                  <input type="text" class="form-control " name="Fname" placeholder="Father's name">
+                </div>
+                
+                <div class="form-group col-xs-4">
+                    <label for="Fphoto"> Upload Father's photo</label> <br>    
+                    <input type="file" name="mycover2" value="Ffileupload" name="Fphoto">
+                </div>
+            </div>    
+            
+            <div class="form-row">
+                    <div class="form-group col-xs-4">
+                      <label for="Mname">Mother's name</label>
+                      <input type="text" class="form-control " name="Mname" placeholder="Mother's name">
+                    </div>
+            
+                    <div class="form-group col-xs-4">
+                        <label for="Mphoto"> Upload Mother's photo</label> <br>    
+                        <input type="file" name="mycover3" value="Mphoto" name="Mfileupload">
+                    </div>
+            </div>
+            
+            <div class="form-row">       
+                <div class="form-group col-xs-4">
+                <label for="School">School</label>
+                <input type="text" class="form-control" name="School" placeholder="School Name">
+                </div>
+            
+                <div class="form-group col-xs-4">
+                    <label for="Grade">Grade</label>
+                    <input type="text" class="form-control" name="Grade" placeholder="Grade">
+                </div>
+            </div>
+            
+            <div class="form-group col-xs-4">
+                <label for="PYmarks"> Upload previous year's marks card</label> <br>    
+                <input type="file" name="mycover4" value="pyfileupload" name="PYmarks">
+            </div>
+
+            <div class="form-group col-xs-4">
+                <label for="PPYmarks"> Upload last but one year's marks card</label> <br>    
+                <input type="file" name="mycover5" value="ppyfileupload" name="PPYmarks">
+            </div>
+
+            <div class="form-group col-xs-4">
+                <label for="Marks"> Marks obtained</label>
+                <input type="text" class="form-control" name="Marks" placeholder="Marks obtained">
+            </div>
+
+            <div class="form-group col-xs-4">
+                <label for="Incomecert"> Upload income certificate</label> <br>    
+                <input type="file" name="mycover6" value="icfileupload" name="Incomecert">
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group col-xs-4">
+                    <label for="Foccup">Father's occupation</label>
+                    <input type="text" class="form-control " name="Foccup" placeholder="Father's Occupation">
+                </div>
+
+                <div class="form-group col-xs-4">
+                    <label for="Moccup">Mother's occupation</label>
+                    <input type="text" class="form-control " name="Moccup" placeholder="Mother's Occupation">
+                </div>
+            </div>
+            
+            <div class="form-group col-xs-4">
+                <label for="Sfee">School Fees</label>
+                <input type="text" class="form-control" name="Sfee" placeholder="School Fees">
+            </div>
+
+            <div class="form-group col-xs-4">
+                <label for="Scholar">Scholarship Fees</label>
+                <input type="text" class="form-control" name="Scholar" placeholder="Scholarship Fees">
+            </div>
+            <input type="submit" class="btn btn-primary" value="Submit">
+    </form>
+  </body>
+</html>
