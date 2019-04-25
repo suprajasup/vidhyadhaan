@@ -23,5 +23,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', IndexPage , name='index' ),
     path('details/',details),
-    path('details_student/<int:Ano>/',details_student),
+    path('details_student/<int:id>/',details_student),
 ]+ static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

@@ -46,7 +46,7 @@ def details(request):
 	return render(request,"data.html",{"students":students})
 
 def details_student(request,id):
-	appno=Student.objects.get(id=id)
+	appno=Student.objects.get(pk=id)
 	print(appno)
 
 
